@@ -1,0 +1,58 @@
+.shopping-item {
+    background-color: white;
+    min-height: 110px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #999999;
+    padding: 10px 40px;
+
+    .row-container {
+        min-height: inherit;
+        vertical-align: middle;
+        align-items: center;
+
+        .container-date {
+            padding: 10px 60px;
+        }
+
+        .border {
+            border-right: solid #dadada 2px;
+            border-left: solid #dadada 2px;
+        }
+
+        .container-quantity {
+            background-color: #ec5356;
+            height: 31px;
+            width: 50px;
+            border-radius: 10px;
+            color: white;
+            font-size: 12px;
+            padding-top: 19px;
+        }
+
+        .container-currency {
+            font-size: 30px;
+        }
+
+        .container-options{
+            cursor: pointer;
+        }
+
+        .padding-side {
+            padding: 0 25px;
+        }
+
+        .padding-tops {
+            padding: 8px 0;
+        }
+
+        .chevron-color {
+            color: #ed8d38;
+        }
+    }
+
+}
+
+.full-width {
+    width: 100%;
+}

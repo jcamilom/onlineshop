@@ -1,0 +1,54 @@
+$font: 'roboto';
+
+@font-face {
+  font-family: $font;
+  src: url('./assets/fonts/roboto/roboto-bold.ttf') format('truetype');
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font;
+  src: url('./assets/fonts/roboto/roboto-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: $font, 'arial', sans-serif;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+html {
+  background-color: #e6e6e6
+}
+
+.row {
+  display: flex;
+  &.center {
+    align-items: center;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+@for $i from 1 through 10 {
+  .col-#{$i*10} {
+    flex-direction: column;
+    width: #{$i*10%};
+  }
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+<div class="row container-row space-between">
+  <div>
+    <app-check-field (checkedChange)="toggleSelectAll($event)" [id]="'messages-select-all'"></app-check-field>
+  </div>
+  <div class="col-40">
+    <app-search-field></app-search-field>
+  </div>
+</div>
+<ng-container *ngFor="let message of messages; let i = index">
+  <div class="row container-row">
+    <div class="container-check">
+      <app-check-field [checked]="message.selected" id="message-{{i}}"></app-check-field>
+    </div>
+    <div class="container-message">
+      <app-message-item [message]="message">
+      </app-message-item>
+    </div>
+  </div>
+</ng-container>

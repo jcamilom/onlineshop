@@ -1,0 +1,19 @@
+<div class="row container-row space-between">
+  <div>
+    <app-check-field (checkedChange)="toggleSelectAll($event)" [id]="'shopping-select-all'"></app-check-field>
+  </div>
+  <div class="col-40">
+    <app-search-field></app-search-field>
+  </div>
+</div>
+<ng-container *ngFor="let item of items; let i = index">
+  <div class="row container-row">
+    <div class="container-check">
+      <app-check-field [checked]="item.selected" id="shopping-item-{{i}}"></app-check-field>
+    </div>
+    <div class="container-item">
+      <app-shopping-item [item]="item">
+      </app-shopping-item>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: auto;
+}
+
+.main-content {
+  padding: 40px 70px 25px 70px;
+}

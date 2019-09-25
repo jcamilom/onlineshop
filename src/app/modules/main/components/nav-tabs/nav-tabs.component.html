@@ -1,0 +1,37 @@
+<div class="row text-center">
+  <div class="col tab" [routerLink]="['/home']" routerLinkActive="tab-active">
+    <fa-icon [icon]="faHome" [size]="'2x'" class="icon"></fa-icon>
+    <br>
+    <span class="text">
+      Home
+    </span>
+  </div>
+  <div class="col tab" [routerLink]="['/messages']" routerLinkActive="tab-active">
+    <fa-icon [icon]="faEnvelope" [size]="'2x'" class="icon"></fa-icon>
+    <br>
+    <span class="text">
+      Messages
+    </span>
+  </div>
+  <div class="col tab" [routerLink]="['/wishlist']" routerLinkActive="tab-active">
+    <fa-icon [icon]="faStar" [size]="'2x'" class="icon"></fa-icon>
+    <br>
+    <span class="text">
+      Wishlist
+    </span>
+  </div>
+  <div class="col tab" [routerLink]="['/settings']" routerLinkActive="tab-active">
+    <fa-icon [icon]="faCog" [size]="'2x'" class="icon"></fa-icon>
+    <br>
+    <span class="text">
+      Settings
+    </span>
+  </div>
+  <div class="col tab" [routerLink]="['/my-account']" routerLinkActive="tab-active">
+    <fa-icon [icon]="faUser" [size]="'2x'" class="icon"></fa-icon>
+    <br>
+    <span class="text">
+      My account
+    </span>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.search-field {
+  input {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 8px;
+    border: solid 1px rgb(204, 204, 204);
+    font-size: 18px;
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}

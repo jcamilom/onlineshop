@@ -1,0 +1,15 @@
+.tab {
+  width: 20%;
+  background-color: white;
+  padding: 10px;
+  color: #343434;
+  cursor: pointer;
+  .text {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  &.tab-active {
+    background-color: #1e3948;
+    color: white;
+  }
+}

@@ -1,0 +1,15 @@
+$dark-gray: #686868;
+
+.under-construction {
+  // justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  color: $dark-gray;
+  .text {
+    padding-top: 40px;
+    span {
+      text-transform: uppercase;
+      font-size: 35px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<div class="shopping-item">
+  <div class="row row-container row-container">
+    <div class="col-10 padding-side  container-date">
+      {{ item.date | date:'fullDate' }}
+    </div>
+    <div class="col-40 padding-side border">
+      <div class="row row-container">
+        <div class="col text-center full-width">
+          <span>
+            {{ item.locationFrom }}
+          </span>
+        </div>
+      </div>
+      <div class="row row-container padding-tops">
+        <div class="col-10">
+          <fa-icon [icon]="faLocationArrow" [size]="'1x'" class="icon"></fa-icon>
+        </div>
+        <div class="col-80 text-center chevron-color ">
+          <fa-icon [icon]="faChevronDown" [size]="'2x'" class="icon"></fa-icon>
+        </div>
+      </div>
+      <div class="row row-container">
+        <div class="col text-center full-width">
+          <span>
+            {{ item.locationTo }}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-50 padding-side">
+      <div class="row row-container">
+        <div class="col-20 padding-side">
+          <fa-icon [icon]="faTruckMoving" [size]="'2x'" class="icon"></fa-icon>
+        </div>
+        <div class="col-20 padding-side container-currency">
+          {{ item.amount | currency}}
+        </div>
+        <div class="col-20 padding-side">
+          <div class="container-quantity text-center row-container">
+            {{ item.quantity }}
+          </div>
+        </div>
+        <div class="col-20 padding-side">
+          <div class="container-options text-center row-container">
+            <fa-icon [icon]="faEllipsisV" [size]="'1x'" class="icon"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
